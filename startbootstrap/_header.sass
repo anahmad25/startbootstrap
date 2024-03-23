@@ -1,0 +1,48 @@
+header
+    padding: 20px 0
+    position: fixed
+    z-index: 1
+    top: 0
+    right: 0
+    left: 0
+    background-color: #212529
+    transition: 0.3s
+    .menu
+        display: flex
+        justify-content: space-between
+        .imgbox
+            cursor: pointer
+            img
+                height: 24px
+                cursor: pointer
+        a
+            padding: 7px 10px
+            display: inline-block
+            font-size: 18px
+            color: #ffff
+            margin-right: 15px
+            &:hover
+                color: #ffc800
+                cursor: pointer
+    .btn
+        border: .5px solid #545454
+        border-radius: 6px
+        padding: 9px
+        width: 80px
+        color: #9b9d9e
+        font-size: 13px
+        font-weight: 700
+        display: none
+        .icon
+            display: inline-block
+            margin-left: 5px
+
+    /* Media queries */
+    @media (max-width: 991px)
+        .menu
+            padding-top: 8px
+            padding-bottom: 8px
+            nav
+                display: none
+        .btn
+            display: block
