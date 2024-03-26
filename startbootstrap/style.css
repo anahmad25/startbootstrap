@@ -274,18 +274,6 @@ header .btn .icon {
   margin-bottom: 100px;
   min-height: 170px;
 }
-#about ul li.firstli {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  margin-left: -1.5px;
-  background-color: #e9ecef;
-}
-#about ul li.fastli {
-  margin-bottom: 0;
-}
 #about .end, #about .start {
   position: relative;
   width: 41%;
@@ -339,9 +327,6 @@ header .btn .icon {
   }
 }
 @media (max-width: 767px) {
-  #about ul li.firstli {
-    left: 40px;
-  }
   #about ul li {
     min-height: 50px;
     margin-bottom: 50px;
@@ -433,6 +418,9 @@ header .btn .icon {
   margin-bottom: 16px;
 }
 
+#logos {
+  padding: 48px 0;
+}
 #logos .imgbox {
   cursor: pointer;
 }
@@ -446,7 +434,6 @@ header .btn .icon {
   background-color: #212529;
   background-image: url("assets/map-image.png");
   background-position: center;
-  background-repeat: no-repeat;
   /* Media queries */        
 }
 #contactus h1, #contactus h2 {
@@ -463,14 +450,19 @@ header .btn .icon {
   color: #6c757d;
   margin-bottom: 64px;
 }
-#contactus input {
+#contactus .box {
+  display: flex;
+  flex-direction: column;
+}
+#contactus .box input {
+  display: inline-block;
   font-size: 18px;
   padding: 20px;
   border: 1px solid #ced4da;
   line-height: 1.5;
   margin-bottom: 24px;
 }
-#contactus .inputPhone {
+#contactus .box .inputPhone {
   margin-bottom: 0;
 }
 #contactus textarea {
@@ -481,16 +473,6 @@ header .btn .icon {
   border: 1px solid #ced4da;
   border-radius: 5px;
   min-height: 180px;
-}
-#contactus input::-moz-placeholder, #contactus textarea::-moz-placeholder {
-  font-size: 19px;
-  font-weight: 600;
-  color: #ced4da;
-}
-#contactus input::placeholder, #contactus textarea::placeholder {
-  font-size: 19px;
-  font-weight: 600;
-  color: #ced4da;
 }
 #contactus .btn {
   background-color: #ffc800;
@@ -504,7 +486,7 @@ header .btn .icon {
   font-size: 20px;
 }
 @media (max-width: 767px) {
-  #contactus .inputPhone {
+  #contactus .box .inputPhone {
     margin-bottom: 24px;
   }
 }

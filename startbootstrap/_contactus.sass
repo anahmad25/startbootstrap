@@ -3,7 +3,6 @@
     background-color: #212529
     background-image: url('assets/map-image.png')
     background-position: center
-    background-repeat: no-repeat
     h1,h2
         cursor: text
     h1
@@ -15,14 +14,18 @@
         font-size: 19px
         color: #6c757d
         margin-bottom: 64px
-    input
-        font-size: 18px
-        padding: 20px
-        border: 1px solid #ced4da
-        line-height: 1.5
-        margin-bottom: 24px
-    .inputPhone
-        margin-bottom: 0
+    .box
+        display: flex
+        flex-direction: column
+        input
+            display: inline-block
+            font-size: 18px
+            padding: 20px
+            border: 1px solid #ced4da
+            line-height: 1.5
+            margin-bottom: 24px
+        .inputPhone
+            margin-bottom: 0
     textarea
         font-size: 18px
         padding: 20px
@@ -31,10 +34,6 @@
         border: 1px solid #ced4da
         border-radius: 5px
         min-height: 180px
-    input::placeholder,textarea::placeholder
-        font-size: 19px
-        font-weight: 600
-        color: #ced4da
     .btn
         background-color: #ffc800
         color: #ffff
@@ -47,5 +46,6 @@
 
     /* Media queries */        
     @media (max-width: 767px)
-        .inputPhone
-            margin-bottom: 24px
+        .box
+            .inputPhone
+                margin-bottom: 24px
