@@ -286,7 +286,7 @@ header .btn .icon {
   left: 60%;
   padding: 0 100px 20px 20px;
 }
-#about .imgbox {
+#about .imgbox, #about .textbox {
   position: absolute;
   left: 50%;
   margin-left: -85px;
@@ -299,7 +299,7 @@ header .btn .icon {
   color: white;
   overflow: hidden;
 }
-#about .imgbox h5 {
+#about .textbox h5 {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
