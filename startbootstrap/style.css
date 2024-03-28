@@ -315,12 +315,12 @@ header .btn .icon {
   #about ul li .start {
     padding: 0 30px 20px 20px;
   }
-  #about ul li .imgbox {
+  #about ul li .imgbox, #about ul li .textbox {
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-  #about ul li .imgbox h5 {
+  #about ul li .textbox h5 {
     font-size: 13px;
     line-height: 18px;
     padding: 15px 20px;
@@ -339,13 +339,13 @@ header .btn .icon {
   #about ul li .start {
     left: 0;
   }
-  #about ul li .imgbox {
+  #about ul li .imgbox, #about ul li .textbox {
     left: 0;
     width: 80px;
     height: 80px;
     margin-left: 0;
   }
-  #about ul li .imgbox h5 {
+  #about ul li .textbox h5 {
     font-size: 10px;
     line-height: 14px;
     padding: 10px 15px;
@@ -422,11 +422,16 @@ header .btn .icon {
   padding: 48px 0;
 }
 #logos .imgbox {
+  width: 110px;
+  margin-right: auto;
+  margin-left: auto;
   cursor: pointer;
 }
 #logos .imgbox img {
-  height: 43px;
   cursor: pointer;
+}
+#logos .big {
+  width: 160px;
 }
 
 #contactus {
