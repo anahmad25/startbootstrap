@@ -28,10 +28,7 @@ header .menu .imgbox {
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
-}
-header .menu .imgbox img {
-  height: 24px;
-  cursor: pointer;
+  width: 140px;
 }
 header .menu a {
   padding: 7px 10px;
